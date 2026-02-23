@@ -1,0 +1,290 @@
+﻿<!doctype html>
+ <html>
+  <head>
+   <meta charset="utf-8">
+  <title>Kontakt Ida Travel</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+<style>
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+	scan:progressive;
+}
+@font-face{
+src:url('fonty/Aleo-Bold.otf');
+font-family:aleo;
+}
+body{
+margin: 0 auto;
+padding:0px;
+font-family:aleo;
+background-image:url('tlo.jpg');
+background-repeat:no-repeat;
+background-size:105%;
+position:relative;
+background-attachment:scroll;
+}
+nav{
+width:970px;
+height:50px;
+background-color:#028e67;
+font-family:aleo;
+color:white;
+text-align:center;
+border-radius:5px;
+margin-right:200px;
+margin-left:320px;
+box-shadow: 0 0 10px 8px black;
+position:relative;
+bottom:7px;
+
+
+}
+ul, ul li{
+
+	list-style:none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size:22px;
+	padding:26px;
+}
+ul li{
+	
+	display: inline;
+	white-space: nowrap;
+	position:relative;
+    bottom:87px;
+}
+a{
+   color:white;
+}
+header{
+width:970px;
+height:46%;
+
+font-family:aleo;
+
+margin-top:6px;
+border-radius:6px;
+box-shadow: 0 0 10px 8px black;
+background-size:100%;
+}
+
+#logo{
+  z-index:2;
+  position:relative;
+  top:2px;
+  left:5px;
+  
+}
+
+img{
+  border-radius:30px;
+  width:100px;
+  height:100px;
+  }
+  
+
+float:left;
+
+}
+button{
+color:black;
+}
+a{
+text-decoration:none;
+color:white;
+}
+a:hover{
+text-decoration:none;
+color:white;
+}
+ main{
+ 
+   height:78%;
+   width:970px;
+   border:0px solid black;
+   border-radius:5px;
+   background-color:#ebf442;
+   opacity:0.9;
+  margin-left:320px;
+box-shadow: 0 0 10px 8px black;
+position:relative;
+top:70px;
+ }
+
+ footer{
+
+ text-align:center;
+   width:970px;
+ border-radius:5px;
+
+	background-color:#ebf442;
+	box-shadow: 0 0 10px 8px black;
+	    margin-right:63px;
+ margin-left:320px;
+ position:relative;
+top:70px;
+
+opacity:0.9;
+
+ }
+
+#name{
+
+color:red;
+font-weight:bold;
+font-size:10px;
+
+}
+
+textarea{
+  width:560px;
+  height:300px;
+  
+}
+
+button{
+  background-color:#042e72;
+  color:white;
+}
+#send{
+    background-color:#042e72;
+  color:white;
+}
+</style>
+</head>
+ <body>
+
+
+  
+ <main>
+   <img src="logo.png" id="logo" alt="logo strony">
+
+     <h1>Konatkt z biurem podróży Ida Traveller</h1>
+ <form>
+  <table>
+      <tr><td><p>Imię:</p><td><input type="text" id="imie"></td></tr>
+      <tr><td><p>Nazwisko:</p></td><td><input type="text" id="nazwisko"></td></tr>
+	  <tr><td><p>E-mail:</p></td><td><input type="text" id="mail"></td></tr>
+	 <tr><td><p>Numer telefonu:</p></td><td><input type="text" id="telefon"></td></tr>
+	 <tr><td><p>Wybierz datę, rezerwacji rejsu:</p></td><td><input type="date" id="data"/></td></tr>
+	 <tr><td><p>Na ile dni, chcesz zarezerowować rejs:</p></td>
+	 <td>
+	   <input type="number" id="iledni"/>
+	 </td>
+	 </tr>
+	 </table><br/>
+	 <p>Wiadomość do konsultanta Ida Traveller:</p><br/>
+	 <textarea maxlength="350">Treść Wiadomości(opcjonalnie)</textarea><br/>
+	 
+	
+
+  <button><a href="index.html">Powrót do strony głównej</a></button>&nbsp;&nbsp;&nbsp;<input type="submit" id="send" onclick="walidacja();"/><br/><br/>
+ </form>  
+	
+ </main>
+<footer>
+	<p id="czas"></p>
+	&copy;Ida Traveller all rights reserved Bartosz Wypych kl.3F
+	
+</footer>
+<script type="text/javascript">
+
+
+
+
+
+
+zegar();setInterval(zegar, 1000);
+     
+	
+	
+
+	
+function zegar(){
+	var tera=new Date();
+	var godzina=tera.getHours();
+	var minuta=tera.getMinutes();
+	var sekunda=tera.getSeconds();
+	var dzien=tera.getDate();
+	var miesiac=tera.getMonth()+1;
+	var rok=tera.getFullYear();
+
+	if(godzina<10){godzina='0'+godzina;}
+	if(minuta<10){minuta='0'+minuta;}
+	if(sekunda<10){sekunda='0'+sekunda;}
+	if(dzien<10){dzien='0'+dzien;}
+	if(miesiac<10){miesiac='0'+miesiac;}
+
+	document.getElementById("czas").innerHTML="Godzina: "+godzina+":"+minuta+":"+sekunda+" Dzisiaj jest: "+dzien+"."+miesiac+"."+rok+" r.";
+}
+	
+	
+	  
+	
+
+	
+	 function walidacja(){
+	 
+	 
+	 
+	var wzorimienia  = /^[a-zA-Z]{3,}$/;
+	var wzornazwiska  = /^[a-zA-Z]{2,}$/;
+	var nrtelwzor=/^\d{9}$/;
+	var email=/^.{1,}@.{1,}[.].{2,3}$/i;
+	var datawzor=/^\d{1,}$/;
+	var wzordaty=/^([0-9]{2})\-([0-9]{2})\-([0-9]{4})$/;
+	
+	var wczytaneimie=document.getElementById("imie").value;
+	var wczytanenazwisko=document.getElementById("nazwisko").value;
+	var wczytanytel=document.getElementById("telefon").value;
+	var wczytanyemail=document.getElementById("mail").value;
+		var podanadata=document.getElementById("data").value;
+	var wczytanadata=document.getElementById("iledni").value;
+	
+	var index = wczytaneimie.search(wzorimienia);  
+    var index1=	wczytanenazwisko.search(wzornazwiska); 
+	var tel=wczytanytel.search(nrtelwzor); 
+	var adres=wczytanyemail.search(email);
+	var dejta=wczytanadata.search(datawzor);
+	
+	
+	
+	if((index == -1)||(index1 == -1)||(adres == -1)||(tel==-1)||(dejta==-1)){
+	  alert('Podałeś nieprawidłowe dane!');
+	   
+	  
+	}else{
+	       alert('Formularz został wysłany.');
+		  
+	}
+	
+if(index == -1){
+	alert('Podałeś nie prawidlowe imię!');
+}
+
+if(index1 == -1){
+	alert('Podałeś nieprawidłowe nazwisko! ');
+}
+	
+	if(adres == -1){
+	alert('Podałeś nieprawidłowy adres email! ');
+	}
+	
+	if(tel==-1){
+     	alert('Podałeś nieprawidłowy numer telefonu! ');
+      
+ }  
+ 
+ if(datka==-1){
+            	alert('Podałeś błędną datę rzerwacji! ');
+ }
+ 
+
+
+}
+	
+</script>
+</body>
+</html>

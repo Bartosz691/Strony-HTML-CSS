@@ -1,0 +1,255 @@
+﻿<!doctype html>
+ <html>
+  <head>
+   <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+  <title>Promocja Ida Travel</title>
+
+<style>
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+	scan:progressive;
+}
+
+@font-face{
+src:url('fonty/Aleo-Bold.otf');
+font-family:aleo;
+}
+body{
+margin: 0 auto;
+padding:0px;
+font-family:aleo;
+background-image:url('tlo.jpg');
+background-repeat:no-repeat;
+background-size:105%;
+position:relative;
+background-attachment:scroll;
+}
+
+a{
+   color:white;
+}
+header{
+width:970px;
+height:275px;
+background-image:url('oferty/tlo.jpg');
+
+position:relative;
+top:20px;
+left:272px;
+font-family:aleo;
+
+margin-top:6px;
+border-radius:6px;
+box-shadow: 0 0 10px 8px black;
+background-size:100%;
+}
+
+#logo{
+  z-index:2;
+  position:relative;
+  top:2px;
+  left:5px;
+   border-radius:30px;
+  width:100px;
+  height:100px;
+  
+}
+
+float:left;
+
+}
+button{
+color:black;
+}
+a{
+text-decoration:none;
+color:black;
+}
+a:hover{
+text-decoration:none;
+color:green;
+}
+ main{
+ 
+   height:80%;
+   width:970px;
+   border:0px solid black;
+   border-radius:5px;
+   background-color:#ebf442;
+   opacity:0.9;
+  margin-left:272px;
+box-shadow: 0 0 10px 8px black;
+position:relative;
+top:10px;
+text-align:center;
+ }
+
+ footer{
+
+ text-align:center;
+
+ border-radius:5px;
+width:970px;
+	background-color:#ebf442;
+	box-shadow: 0 0 10px 8px black;
+	    margin-right:109px;
+ margin-left:272px;
+ position:relative;
+top:3px;
+
+opacity:0.9;
+
+ }
+
+#myPicture{
+
+  border-radius:0px;
+  width:272px;
+  height:269px;
+  position:relative;
+  right:216px;
+  
+}
+
+a{
+   color:white;
+   text-decoration:none;
+   
+}
+
+a:hover{
+   color:white;
+   text-decoration:none;
+}
+
+button{
+  background-color:#042e72;
+  color:white;
+   position:relative;
+   right:216px;
+   
+
+}
+#info{
+   
+  width:45%;
+  height:64%;
+ position:relative;
+ left:450px;
+ bottom:283px;
+
+}
+</style>
+</head>
+ <body>
+<header>
+
+  <img src="logo.png" id="logo" alt="logo strony">
+</header>
+
+  
+ <main>
+   
+
+     <h1>Uwaga dzisiaj wyjątkowa promocja! Obniżka o 40% z oferty:</h1>
+     <img src="oferty/oferta1.jpg"  id="myPicture" onclick="klikniecie(this);"alt="slider"/><br/>
+	
+	
+		
+		<button><a href="index.html">Powrót do strony głównej</a></button>
+		<button><a href="kontakt.html">Zarezerwuj te ofertę <span id="numer"></span></a></button>
+		  <div id="info"></div>
+                                                                                               
+	
+ </main>
+
+<footer>
+	<p id="czas"></p>
+	&copy;Ida Traveller all rights reserved Bartosz Wypych kl.3F
+	
+</footer>
+<script type="text/javascript">
+
+onload=los;
+
+var galeria = new Array("oferty/oferta1.jpg","oferty/oferta2.jpg","oferty/oferta3.jpg","oferty/oferta4.jpg","oferty/oferta5.png" );
+var thisImg = 0;
+
+
+
+function los(){	
+
+     var losow=Math.random()*5+1;
+	 var losow1 = Math.round(losow);
+	 
+    
+	document.getElementById("myPicture").src = galeria[losow1];
+	 if(losow1==galeria.length){
+		  losow1=0;
+	
+		}
+			    document.getElementById("myPicture").src=galeria[losow1];    
+}
+
+
+
+function klikniecie(obj){
+    
+	if(thisImg==0){
+	   
+	   
+	   document.getElementById("info").innerHTML="<h2>Szczegóły oferty:<br/><br/>Rejs 4 Wyspy Greckie i Turcja - All inclusive - Celestyal Olympia</h2><br/>"+"<h2>Cena obejmuje:</h2>"+
+"<p>- rejs statkiem Celestyal Olympia***+,</p><p>- zakwaterowanie w kabinie wybranej kategorii (3 noclegi),- pełne wyżywienie: 3 główne posiłki, przekąski między posiłkami, bufet lub przekąski o północy,</p><p>- pakiet all inclusive obejmujący nielimitowane markowe napoje: piwo, wino, napoje gazowane, likiery, koktajle, wódka, koniak, whisky, itp.,</p><p>- napiwki dla załogi.- korzystanie z basenu i innych urządzeń sportowo-rekreacyjnych,- udział we wszystkich imprezach organizowanych na statku,</p><p>- 2 wycieczki fakultatywne: do Kusadasi oraz pałacu Knossos na Krecie,</p><p>- serwis bagażowy i kabinowy,</p><br/><h2>Cena nie obejmuje</h2><br/>- kosztów dojazdu do portu,</p><p>- opłat portowych- ewentualnych noclegów w hotelu przed/po rejsie i transferów (na zapytanie),</p><p>- korzystania z punktów usługowych (pralnia, fotograf, SPA, internet itp.)</p><p>- Turystycznego Funduszu Gwarancyjnego (2,50 EUR/rejs/os.),</p><p>- ubezpieczenia KL, NW i bagażu.</p>";
+	   
+	}else if(thisImg==1){
+	
+	  document.getElementById("info").innerHTML="<h2>Szczegóły oferty:<br/><br/>Rejs Tajemnicze Karaiby - Costa Deliziosa</h2><br><br/><h2>Cena obejmuje:</h2><p>- rejs statkiem Costa Deliziosa ****+,</p><p> zakwaterowanie w kabinie 2 os. w wybranej kategorii,</p><p>- pełne wyżywienie (śniadanie, lunch, podwieczorek, obiadokolację).</p><p>- napoje (kawa, herbata, woda - dostępne w restauracji bufetowej),</p><p>- korzystanie z basenu, siłowni oraz urządzeń sportowo – rekreacyjnych,</p<p>- serwis kabinowy i bagażowy podczas wejścia i zejścia ze statku,</p><p>- udział we wszystkich imprezach organizowanych na statku (widowiska w teatrze, animacje, koncerty).</p><br/><b></b>";
+	
+	}else if(thisImg==2){
+	  
+	    document.getElementById("info").innerHTML="<h2>Szczegóły oferty:<br/><br/>Rejs Morze Śródziemne z Ibizą i Majorką - Costa Fascinosa</h2><br/><br/><h2>Cena obejmuje:</h2><br/><br/><p>- rejs statkiem Costa Fascinosa ****+,</p><p>- zakwaterowanie w kabinie 2 os. w wybranej kategorii,</p><p>- pełne wyżywienie (śniadanie, lunch, podwieczorek, obiadokolację)</p><p>- napoje (kawa, herbata, woda - dostępne w restauracji bufetowej),</p><p>- korzystanie z basenu, siłowni oraz urządzeń sportowo – rekreacyjnych,</p><p>- serwis kabinowy i bagażowy podczas wejścia i zejścia ze statku,</p><p>- udział we wszystkich imprezach organizowanych na statku (widowiska w teatrze, animacje, koncerty).</p>";
+ 
+	
+	}else if(thisImg==3){
+	   
+	       document.getElementById("info").innerHTML="<h2>Szczegóły oferty:<br/><br/>Rejs Morze Śródziemne z Barcelony - Costa Diadema</h2><br/><br/><h2>Cena obejmuje:</h2><br/><p>Możliwość rozpoczęcia rejsu w portach: Marsylia, Savona, Civitavecchia (Rzym).</p><br/><h2>Cena obejmuje:</h2><br/><br/><p>- rejs statkiem Costa Diadema****+,</p><p>- zakwaterowanie w kabinie 2 os. w wybranej kategorii,</p><p>- pełne wyżywienie (śniadanie, lunch, podwieczorek, obiadokolację),</p><p>- napoje (kawa, herbata, woda - dostępne w restauracji bufetowej),</p><p>- korzystanie z basenu, siłowni oraz urządzeń sportowo – rekreacyjnych,</p><p>- serwis kabinowy i bagażowy podczas wejścia i zejścia ze statku,</p><p>- udział we wszystkich imprezach organizowanych na statku (widowiska w teatrze, animacje, koncerty).</p>";
+ 
+	}else if(thisImg==4){
+	
+	document.getElementById("info").innerHTML="<h2>Szczegóły oferty:<br/><br/>Rejs Śródziemnomorska Majówka - Costa Fascinosa</h2><br/><br/><h2>Cena obejmuje:</h2><br/><p>- rejs statkiem Costa Fascinosa ****+,<p><p>- zakwaterowanie w kabinie 2 os. w wybranej kategorii,</p><p>- pełne wyżywienie (śniadanie, lunch, podwieczorek, obiadokolację)</p><p>- napoje (kawa, herbata, woda - dostępne w restauracji bufetowej),</p><p>- korzystanie z basenu, siłowni oraz urządzeń sportowo – rekreacyjnych,</p><p>- serwis kabinowy i bagażowy podczas wejścia i zejścia ze statku,</p><p>- udział we wszystkich imprezach organizowanych na statku (widowiska w teatrze, animacje, koncerty),</p><p>- przejazd komfortowym autokarem na trasie Poznań - Savona - Poznań, </p><p>- opiekę polskiego kapitana.</p>";
+
+  }
+
+
+}
+
+
+zegar();
+setInterval(zegar, 1000);
+     
+	
+	
+
+	
+function zegar(){
+	var tera=new Date();
+	var godzina=tera.getHours();
+	var minuta=tera.getMinutes();
+	var sekunda=tera.getSeconds();
+	var dzien=tera.getDate();
+	var miesiac=tera.getMonth()+1;
+	var rok=tera.getFullYear();
+
+	if(godzina<10){godzina='0'+godzina;}
+	if(minuta<10){minuta='0'+minuta;}
+	if(sekunda<10){sekunda='0'+sekunda;}
+	if(dzien<10){dzien='0'+dzien;}
+	if(miesiac<10){miesiac='0'+miesiac;}
+
+	document.getElementById("czas").innerHTML="Godzina: "+godzina+":"+minuta+":"+sekunda+" Dzisiaj jest: "+dzien+"."+miesiac+"."+rok+" r.";
+}
+	
+   </script>
+   </body>
+</html>
