@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>AK | JS.Szablon kolorkowy Bartosz Wypych</title>
+	<link rel="stylesheet" href="style.css" >
+	<meta name="author" content="Bartosz Wypych">
+	<meta name="description" content="Project of Website by Bartosz Wypych"> 
+	<link rel="icon" href="OBRAZY/favicon.png"> 
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="500">
+</head>
+<body>
+<script>
+   function czysc(){
+      document.getElementById("result").value="";
+	        document.getElementById("l1").value="";
+			    document.getElementById("l2").value="";
+   }
+   
+   function dodaw(){
+        var a=parseFloat(document.getElementById("l1").value);
+		 var b=parseFloat(document.getElementById("l2").value);
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a+b).toFixed(2);
+		 }
+   }
+   
+     function odej(){
+        var a=parseFloat(document.getElementById("l1").value);
+		 var b=parseFloat(document.getElementById("l2").value);
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a-b).toFixed(2);
+		 }
+   }
+   
+     function mnozenie(){
+        var a=parseFloat(document.getElementById("l1").value);
+		 var b=parseFloat(document.getElementById("l2").value);
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a*b).toFixed(2);
+		 }
+		 
+		   function dziele(){
+        var a=parseFloat(document.getElementById("l1").value);
+		 var b=parseFloat(document.getElementById("l2").value);
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		}else if(b==0){
+		
+		      document.getElementById("result").value="Nie można dzielić przez zero!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a/b).toFixed(2);
+		 }
+   }
+   
+   }
+</script>
+	<div id="container">
+		<header>
+		<div id="lewa">
+		<img src="OBRAZY/logo.png" id="img1" alt="JavaSript" />
+		<p id="first">JavaScript</p>
+		</div>
+				<nav>
+				<ul id="liprawa">
+							<li id="try"><a href="index.html">Try JavaScript</a></li>
+							<li><a href="index.html">News</a></li>
+							<li><a href="index.html">Resources</a></li>
+					</ul>
+				</nav>	
+			</header>
+		<main>
+		    <div id="foto">
+				<img id="foto2" src="OBRAZY/img2.png" alt="obrazek">
+			</div>
+			<section>
+			
+				<p>Ready to try JavaScript?</p>
+				<ul>
+					<li><a href="skrypcik1.html">Script 1</a></li>
+					<li><a href="skrypcik2.html">Script 2</a></li>
+					<li><hr/>
+			   <h1>PROSTY KALKULATOR</h1>
+			   <input type="text" id="l1" value="Podaj liczbe 1"><br/><br/>
+				<input type="text" id="l2" value="Podaj liczbe 2"><br/>
+				<p>wybierz działanie:</p><br/>
+				<input type="button" id="dod" value="+" onclick="dodaw()">&nbsp;&nbsp;<input type="button" id="odj" value="-" onclick="odej()">&nbsp;&nbsp;<input type="button" id="mno" value="*" onclikc="mnozenie()">&nbsp;&nbsp;<input type="button" id="dziel" value="/" onclick="dziele()"><br/>
+				<p>wynik:</p><input type="text" id="result"><br><br>
+				<input type="reset" id="clear" value="WYCZYŚĆ" onclick="czysc()">
+			<hr/></li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+            <div id="footer_left">
+                <div>
+                   <strong> E.14 2020 - It's time to work!</strong>
+                </div>
+                
+            </div>
+            <div id="footer_right">
+                <div class="float">
+                    <img src="OBRAZY/img1.png" alt="obrazek2">
+                </div>
+                <div class="float">
+                   <h3>The Latest News to Your <br>Inbox</h3>
+                   <p>Subscribe now to the weekly 5<br/>Minutes of JavaScript newsletter</p>
+                </div>
+                <div id="sub">
+                   <input type="text" placeholder="Email Address">
+                   <button>Subscribe</button>
+                </div>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>AK | JS.Szablon kolorkowy Bartosz Wypych</title>
+	<link rel="stylesheet" href="style.css" >
+	<meta name="author" content="Bartosz Wypych">
+	<meta name="description" content="Project of Website by Bartosz Wypych"> 
+	<link rel="icon" href="OBRAZY/favicon.png"> 
+	<meta charset="utf-8">
+    <meta http-equiv="refresh" content="500">
+	<style>
+	  body{
+	  margin:0;
+	     text-align:center;
+		 font-family:Calibri;
+	  }
+	  #haselko{
+	     color:red;
+	  }
+	  hr{
+	    color:red;
+	  }
+	</style>
+	
+</head>
+<body>
+
+<hr/>
+   <h1>SILNE HASŁO</h1>
+    <input type="button" value="UTWÓRZ LOSOWY STRING" onclick="gen()">&nbsp;&nbsp;<input type="text" id="haselko">
+<hr/>
+<script>
+function gen(){ 
+  var znak="0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz!@#$&*_+-";
+  var password="";
+  for(var i=0;i<8;i++){
+     var los=Math.floor(Math.random()*znak.length);
+	 password+=znak.charAt(los);
+  }
+    document.getElementById("haselko").value=password;
+  }
+</script>
+</body>
+</html>

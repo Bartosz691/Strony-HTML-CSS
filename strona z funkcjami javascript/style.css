@@ -1,0 +1,237 @@
+        body{
+            margin: 0 auto;
+            font-family: sans-serif;
+			
+			
+		
+        }
+        header{
+            background-color: #9cd5e0;
+            margin: 0 auto;
+            color: white;
+            overflow: auto;
+        }
+        main{
+            background-image: url("OBRAZY/bg.jpg");
+            background-size: cover;
+            overflow: auto;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 50px solid white;
+        }
+        div#lewa{
+            height: 100px;
+            float: left;
+            margin: 20px;
+
+        }
+        div#lewa img{
+            height: 100%;
+            width: auto;
+            float: left;
+        }
+        p#first{
+            float: left;
+            line-height: 20px;
+            font-size: 36px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        ul{
+            margin: 20px;
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+        header li{
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            display: table-cell;
+            vertical-align: middle;
+			 font-size:25px;
+        }
+
+        li#try{
+         
+        }
+
+        a{
+            text-decoration: none;
+
+        }
+        a:hover{
+			
+         
+            padding-right: 40px;
+            display: table-cell;
+			 background-color: #e55d51;
+            border-radius: 14px;
+			
+		}
+	
+        header a{
+            color: white;
+        }
+
+        ul#liprawa{
+            float: right;
+        }
+        
+        img#foto2{
+            border: 20px solid white;
+            border-radius: 125px;
+            margin: 0 auto;
+            width: 10%;
+        }
+
+        div#foto{
+            margin: 0 auto;
+            display: inline;
+            overflow: auto;
+            position: relative;
+            top: 80px;
+        }
+
+        section{
+            background-color: white;
+            width: 40%;
+            margin: 0 auto;
+            padding-top: 50px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        section p{
+            font-size: 34px;
+        }
+
+        section ul{
+            margin: 0px;
+            padding: 0px;
+            width: 80%;
+            display: inline-block;
+        }
+        
+        section li{
+            background-color: white;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        section li a{
+            color: #9cd5e0;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        footer{
+            width: 100%;
+            overflow: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: black;
+        }
+
+        div#footer_left{
+            float: left;
+            width: 45%;
+            color: #728770;
+            position: relative;
+            top: 50px;
+            text-align: center;
+        }
+
+        div#footer_left strong{
+            width: 100%;
+            font-size: 28px;
+            border-top: 2px solid #728770;
+            padding: 20px;
+        }
+
+        div#footer_right{
+            float: right;
+            width: 45%;
+        }
+
+        div#footer_right h3{
+            color: white;
+        }
+
+        div#footer_right p{
+            color: #728770;
+        }
+
+        div.float{
+            width: 40%;
+            margin: 5%;
+            float: left;
+            overflow: auto;
+        }
+
+        div.float img{
+            width: 100%;
+        }
+
+        div#sub{
+            display: inline-block;
+            width: 100%;
+            overflow: auto;
+        }
+
+        div#sub button, div#sub input{
+            height: 35px;
+            border-radius: 10px;
+        }
+
+        div#sub button{
+            background-color: #e55d51;
+            border: 0;
+            color: white;
+            width: 30%;
+            float: right;
+            margin: 2%;
+        }
+
+        div#sub input{
+            float: left;
+            width: 60%;
+            margin: 2%;
+            border: 0;
+            padding-left: 1.5%;
+        }
+		
+		
+	  #a{
+	     width:40px;
+	  }
+	   #b{
+	     width:40px;
+	  }
+	   #c{
+	     width:40px;
+	  }
+	 #makeit{
+	 margin-top:9px;
+	 }
+	 #clear{
+	   margin-top:9px;
+	 }
+	 #blad{
+	      color:red;
+		  font-size:11px;
+	 }
+	 hr{
+	   color:red;
+	 }
+	 	  #haselko{
+	     color:red;
+	  }
+	  #result{
+	     color:red;
+	  }

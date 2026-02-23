@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>AK | JS.Szablon kolorkowy Bartosz Wypych</title>
+	<link rel="stylesheet" href="style.css" >
+	<meta name="author" content="Bartosz Wypych">
+	<meta name="description" content="Project of Website by Bartosz Wypych"> 
+	<link rel="icon" href="OBRAZY/favicon.png"> 
+	<meta charset="utf-8">
+    <meta http-equiv="refresh" content="500">
+	<style>
+	  body{
+	     text-align:center;
+		 font-family:Calibri;
+	  }
+	  #a{
+	     width:40px;
+	  }
+	   #b{
+	     width:40px;
+	  }
+	   #c{
+	     width:40px;
+	  }
+	 #makeit{
+	 margin-top:9px;
+	 }
+	 #clear{
+	   margin-top:9px;
+	 }
+	 #blad{
+	      color:red;
+		  font-size:11px;
+	 }
+	 hr{
+	   color:red;
+	 }
+	</style>
+</head>
+<body>
+<hr/>
+<h1>RÓWNANIE  KWADRATOWE</h1>
+<input type="text" id="a" placeholder="a"><span>x<sup>2</sup>+</span><input type="text" id="b" placeholder="b"><span>x+</span><input type="text" id="c" placeholder="c"><span>=</span><span  id="wynik1"></span><br/>
+<input type="button" id="makeit" value="ROZWIĄŻ" onclick="operation()">&nbsp;&nbsp;<input type="reset" id="clear" value="WYCZYŚĆ" onclick="resecik()"></input><br/><br/>
+<span  id="wynik"></span><br/>
+<p>Komunikat:</p><span id="blad"></span>
+<hr/>
+<script>
+function operation(){
+      var a=document.getElementById("a").value;
+	  var b=document.getElementById("b").value;
+	  var c=document.getElementById("c").value;
+	    var delta=Math.pow(b,2)-(4*a*c);
+	  if(!a||!b||!c){
+	     document.getElementById("blad").innerHTML= "Ups,pozostawiłeś puste pole!";
+		  document.getElementById("wynik1").innerHTML="0";
+	  }else if(isNaN(a)||isNaN(b)||isNaN(c)){
+	     	     document.getElementById("blad").innerHTML= "Ups, wpisałeś wartość niebędącą liczbą!";
+				    document.getElementById("wynik1").innerHTML="0"; 
+	  }else if(a==0){
+         	   document.getElementById("blad").innerHTML= "Hm...To nie jest równanie kwadratowe, bo a=0 ";
+			     document.getElementById("wynik1").innerHTML="0"; 
+	 }else{
+	
+	document.getElementById("blad").innerHTML="To jest równanie kwadratowe,<br>delta ="+delta;
+	     
+	 
+	 if(delta<0){
+	  document.getElementById("wynik").innerHTML="brak rozwiązań";
+		  document.getElementById("blad").innerHTML="Ponieważ delta jest mniejsze od zera";
+	     
+	 }else if(delta==0){
+	 
+	 document.getElementById("wynik").innerHTML=-b/(2*a);
+		 document.getElementById("blad").innerHTML="delta jest rowne zero, więc jestjedno rozwiązanie";
+	 }else if(delta>0){
+	 var x1= (-b+Math.sqrt(delta) / (2*a)).toFixed(2);
+	
+	 var x2= (-b-Math.sqrt(delta) / (2*a)).toFixed(2);
+	 
+	           document.getElementById("wynik").innerHTML=+" "+" x1="+x1+"|"+"x2="+x2;
+			    document.getElementById("blad").innerHTML="delta jest wieksze od zera";
+	 }
+	 }
+}
+
+function resecik(){
+       document.getElementById("wynik").innerHTML=" ";
+	   document.getElementById("blad").innerHTML=" ";
+}
+</script>
+</body>
+</html>

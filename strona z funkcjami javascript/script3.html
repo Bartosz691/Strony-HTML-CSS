@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>AK | JS.Szablon kolorkowy Bartosz Wypych</title>
+	<link rel="stylesheet" href="style.css" >
+	<meta name="author" content="Bartosz Wypych">
+	<meta name="description" content="Project of Website by Bartosz Wypych"> 
+	<link rel="icon" href="OBRAZY/favicon.png"> 
+	<meta charset="utf-8">
+    <meta http-equiv="refresh" content="500">
+	<style>
+	  body{
+	  margin:0;
+	     text-align:center;
+		 font-family:Calibri;
+	  }
+	  #result{
+	     color:red;
+	  }
+	  hr{
+	    color:red;
+	  }
+	  p{
+	    text-transform:uppercase;
+	  }
+	</style>
+	
+</head>
+<body>
+<script>
+   function czysc(){
+      document.getElementById("result").value="";
+	        document.getElementById("l1").value="";
+			    document.getElementById("l2").value="";
+   }
+   
+   function dodaw(){
+        var a=document.getElementById("l1").value;
+		 var b=document.getElementById("l2").value;
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a+b).toFixed(2);
+		 }
+   }
+   
+     function odej(){
+        var a=document.getElementById("l1").value;
+		 var b=document.getElementById("l2").value;
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a-b).toFixed(2);
+		 }
+   }
+   
+     function mnozenie(){
+        var a=parseFloat(document.getElementById("l1").value).toFixed(2);
+		 var b=parseFloat(document.getElementById("l2").value).toFixed(2);
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a*b).toFixed(2);
+		 }
+		 
+		   function dziele(){
+        var a=document.getElementById("l1").value;
+		 var b=document.getElementById("l2").value;
+		 if(!a||!b){
+		       document.getElementById("result").value="Nie podłeś żadnych wrtości";
+		 }else if(isNaN(a)||isNaN(b)){
+		         document.getElementById("result").value="Podana wartość nie jest liczbą!";
+		 }else{
+		    
+		        document.getElementById("result").value=parseFloat(a/b).toFixed(2);
+		 }
+   }
+   
+   }
+</script>
+<hr/>
+   <h1>PROSTY KALKULATOR</h1>
+   <input type="text" id="l1" value="Podaj liczbe 1"><br/><br/>
+    <input type="text" id="l2" value="Podaj liczbe 2"><br/>
+	<p>wybierz działanie:</p><br/>
+	<input type="button" id="dod" value="+" onclick="dodaw()">&nbsp;&nbsp;<input type="button" id="odj" value="-" onclick="odej()">&nbsp;&nbsp;<input type="button" id="mno" value="*" onclick="mnozenie()">&nbsp;&nbsp;<input type="button" id="dziel" value="/" onclick="dziele()">
+	<p>wynik:</p><input type="text" id="result">
+	<input type="reset" id="clear" value="WYCZYŚĆ" onclick="czysc()">
+<hr/>
+</body>
+</html>

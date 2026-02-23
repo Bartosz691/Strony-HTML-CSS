@@ -1,0 +1,320 @@
+
+@font-face{
+	
+	font-family:muli;
+	src:url('FONTS/muli/Muli.ttf');
+}
+	
+@font-face{
+	
+	font-family:semibold;
+	src:url('FONTS/muli/Muli-SemiBold.ttf');	
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:muli;
+	color:white;
+		
+}
+
+header img{
+	float:left;
+	
+}
+
+header{
+		background-color: #323c48;
+	width:100%;
+	height:auto;
+	
+
+}
+img{
+	height:40px;
+}
+#top{
+	font-family:semibold;
+	width:100%;
+		padding-top:1%;
+	padding-bottom:2%;
+	font-size:22px;
+	margin-left:110px;
+
+
+	
+}
+
+#bottom{
+	text-align:center;
+	background-image:url('IMG/bg2.jpg');
+	background-repeat:no-repeat;
+	height:auto;
+	font-size:60px;
+		padding-top:2%;
+	padding-bottom:15%;
+	text-shadow:3px 3px grey;
+		background-size:108%;
+}
+p#bottom{
+	padding-top:20px;
+}
+
+main{
+	 text-align:center;
+	background-image:url('IMG/bg2.png');
+  width:100%;
+	font-family:semibold;
+	font-size:25px;
+	color: #323c48;
+	font-weight:bold;
+	height:600px;
+}
+
+main p{
+	text-align:center;
+}
+
+#logo2{
+	height:60px;
+	width:70px;
+}
+
+span{
+	font-size:53px;
+	font-weight:bolder;
+}
+#titletext{
+	margin:0 auto;
+	text-align:center;
+}
+h1{
+	float:left;
+		padding-bottom:1px;
+}
+
+
+
+#tekscior{
+	color:grey;
+	
+}
+
+nav{
+font-family:semibold;
+	text-transform:uppercase;
+	color:#61ded0;
+    text-decoration:none;
+	width:20%;
+		float: right;
+	
+	
+	
+}
+ul{
+	
+	list-style-type:none;
+    text-decoration:none;
+}
+
+nav li{
+	border:3px solid #61ded0;
+		background-color:#323c48;
+		color:#61ded0;
+	 text-decoration:none;
+	 list-style-type:none;
+	 text-align:center;
+	 		 text-align:center;
+	 margin-bottom: 4px;
+		padding: 5px;
+		width: 100%;
+		font-size: 20px;
+	 
+}
+nav li:hover{
+       
+		background-color:#61ded0;
+		color:#323c48;
+		border: 3px solid #323c48;
+		cursor: default;
+	}
+	
+	
+
+a{
+	text-decoration:none;
+		color:#61ded0;
+}
+
+footer{
+	
+	border-top:5px solid #61ded0;
+    	background-color: #323c48;
+	width:100%;
+	height:330px;
+	padding-bottom:11%;
+}
+#products{
+		width: 20%;
+		margin-left: 5%;
+		margin-top: 50px;
+		float: left;
+		color: white;
+		padding:7px;
+}
+
+#support{
+    		width: 20%;
+		margin-left: 5%;
+		margin-top: 50px;
+		float: left;
+		color: white;
+		padding:7px;
+}
+#downloads{
+	width: 20%;
+		margin-left: 5%;
+		margin-top: 50px;
+		float: left;
+		color: white;
+		padding:7px;
+}
+
+footer input{
+		background-color: #323c48;
+		color: white;
+		font-size: 22px;
+		border: 0;
+		border-bottom: 2px solid gray;
+	}
+	footer button{
+		font-size: 22px;
+		background-color: #61ded0;
+		height: 40px;
+		padding-left: 22px;
+		padding-right: 22px;
+		margin-left: 5px;
+		border: 0;
+	}
+#media{
+
+margin-top:50px;
+position: relative;
+		
+}
+
+footer input{
+		background-color: #323c48;
+		color: white;
+		font-size: 22px;
+		border: 0;
+		border-bottom: 2px solid gray;
+			font-family:semibold;
+	}
+	footer button{
+		font-size: 22px;
+		background-color: #61ded0;
+		height: 40px;
+		padding-left: 22px;
+		padding-right: 22px;
+		margin-left: 5px;
+		border: 0;
+	}
+
+#obr1{
+		z-index:1;
+	height:220px;
+	width:342px;
+	float:left;
+	top:20px;
+	position:relative;
+}
+#obr2{
+	z-index:2;
+	height:200px;
+	width:400x;
+	float:left;
+	top:126px;
+	right:132px;
+	position:relative;
+}
+#obr3{
+	z-index:3;
+	height:200px;
+	width:380px;
+	float:left;
+	top:20px;
+	right:250px;
+	position:relative;
+}
+form{
+	padding:7px;
+	color:black;
+	height:360px;
+	width:520px;
+	border:1px solid grey;
+	background-color:white;
+	position:relative;
+	left:112px;
+	top:41px;
+	
+}
+input{
+	float:left;
+}
+span{
+	font-size:10px;
+	font-weight:bolder;
+	float:left;
+}
+#mail{
+	padding-top:12px;
+}
+#send{
+	font-size: 22px;
+		background-color: #61ded0;
+		height: 40px;
+		padding-left: 22px;
+		padding-right: 22px;
+		margin-left: 5px;
+		border: 0;
+		float:right;
+}
+#buy{
+	color:red;
+	background-color:white;
+	border:2px solid red;
+	font-family:muli;
+	text-align:center;
+		height: 60px;
+		width:205px;
+		font-size:17px;
+		font-weight:bold;
+		position:relative;
+		top:48px;
+		
+		left:106px;
+}
+
+#try{
+	
+		position:relative;
+		top:48px;
+			font-size: 22px;
+		background-color: #61ded0;
+		border:1px solid  #61ded0;
+	text-align:center;
+	font-family:muli;
+	font-weight:bold;
+			font-size:17px;
+		height: 60px;
+		width:205px;
+		left:42px;
+		
+}
+
+#formular{
+	width:521px;
+}
