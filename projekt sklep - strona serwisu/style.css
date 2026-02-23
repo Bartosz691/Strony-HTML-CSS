@@ -1,0 +1,179 @@
+body {
+	background: url(images/tlo.jpg) no-repeat top center #000; 
+	margin:0 auto;
+}
+
+div {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+a{
+	text-decoration: none;
+}
+
+img {
+	border:0px;
+}
+
+h1#logo { 
+ margin:63px 0 0 0; 
+ text-align:center; 
+ color:#f0f0f0; 
+ height:47px; 
+ font-family:Arial; 
+ font-size:30px; 
+ font-weight:bold;
+ 
+}
+
+#menu {
+	background: url(images/menu.jpg) no-repeat; 
+	width:712px; 
+	height:40px; 
+	margin:230px auto 0 auto; 
+	clear:both;
+}
+
+#menu ul {
+	list-style: none; 
+	padding:11px 0 0 0; 
+	width:550px; 
+	margin:0;
+	}
+	
+#menu li {
+	float: left; 
+	padding:0 14px;
+}
+#menu a {
+	font-size:14px; 
+	color: #f5f5f5; 
+	font-weight: bold;
+}
+
+#menu a:hover {
+	color:#e9eaca; 
+	border-bottom:dashed #bfc08e 2px;
+}
+
+#kontener {
+	background: url(images/tresc.jpg) repeat; 
+	width:712px; 
+	margin:0 auto; 
+	padding:0; 
+	display:block; 
+	overflow:hidden; 
+	height:35%; 
+	clear:both;
+}
+
+#tresc {
+	float:left;	
+	width:509px; 
+	height:100%; 
+	background: url(images/tresc1.jpg) no-repeat; 
+	padding:16px; 
+	margin:11px; 
+	&margin:6px;
+}
+
+#tresc h2 { 
+ padding:0 0 8px 0;
+ margin:0px 2px;  
+ font-size:17px; 
+ color:#332903;
+}
+
+#tresc span {
+	font-size:11px;
+	color:#8f9164;
+}
+
+#tresc p {
+	text-indent:15px; 
+	color:#433604;
+}
+
+#tresc a {
+	border-bottom:dashed #610303 1px; 
+	color:#610303;
+}	
+
+#tresc a:hover {
+	border-bottom:dashed #610303 1px; 
+	color:#610303; 
+	font-weight:bold;
+}	
+
+.zakonczenie {
+	background: url(images/zakonczenie.jpg) no-repeat; 
+	width:80px; 
+	margin:0 auto 16px auto; 
+	height:11px;
+}
+
+#kolumna {
+	float:right; 
+	width:152px; 
+	height:30%;
+
+}
+
+#kolumna h3 {
+	margin:8px 20px 12px 2px; 
+	font-size:13px; 
+	color:#433605; 
+	text-decoration:underline;
+
+	}
+
+#kolumna ul { 
+    padding:0; 
+    margin:0; 
+    list-style:none;
+	
+}
+
+#kolumna ul li {
+	background:#bdbf88;	
+	border-top:dashed #a1a373 1px; 
+	border-bottom:dashed #a1a373 1px;
+	padding:2px; 
+	margin:0 17px 4px 0; 
+	font-size:13px; 
+	color:#433605;
+}
+
+#kolumna ul li a {
+	font-size:13px; color:#433605;
+	
+}
+
+#kolumna ul li a:hover { 
+  text-decoration:underline;
+}
+
+#stopka {
+ clear:both;
+ background: url(images/stopka.jpg) no-repeat; 
+ width:712px; 
+ height:47px; 
+ margin:0 auto;
+ 
+}
+
+#stopka p {float:right; 
+ margin-top:20px; 
+ margin-right:20px; 
+ color:#CCCCCC; 
+ font-size:11px;
+}
+
+#stopka a {
+	color:#CCCCCC;
+}
+
+#stopka a:hover {
+	border-bottom:dashed #bfc08e 1px;
+}	
