@@ -1,0 +1,197 @@
+
+@font-face{
+	
+  font-family: 'geometria';
+  src: url('FONTY/Geometria.ttf');
+}
+
+@font-face{
+	
+  font-family: 'geometrialight';
+  src: url('FONTY/Geometria-Light.ttf');
+}
+body{
+	
+	margin: 0;
+	padding:0;
+	font-family:geometrialight;
+}
+ul, ul li {
+	display: block;
+	list-style: none;
+	margin:  0;
+	padding: 5px;
+	width:70%;
+}
+
+ul li {
+	display: inline;
+	white-space: nowrap;
+	position:sticky;top:0;
+	text-transform:uppercase;
+}
+li{
+		height:150px;
+	width:170px;
+	padding:5px;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+nav{
+	width:70%;
+  margin-left:398px;
+}
+a:hover{
+	text-decoration:none;
+	color:white;
+}
+h3{
+	margin-bottom:20px;
+}
+#logo{
+	
+	
+float:left;
+height:100px;
+background-image:url("OBRAZY/logo.png");
+background-size:100%;
+background-repeat:no-repeat;
+}
+#prawy{
+	
+	float:right;
+	text-align:center;
+
+}
+img{
+   height:100px;
+   width:100px;
+}
+header{
+	
+	font-family:geometria;
+	background-color:#8B8B7F;
+	height:120px;
+	width:100%;
+	color:white;
+}
+h1{
+	text-transform:uppercase;
+}
+#glowna{
+	text-align:center;
+	background-color:#D1BD82;
+	border-radius:6px;
+  font-weight:bolder;
+}
+#glowna:hover{
+		text-align:center;
+	background-color:white;
+	color:#D1BD82;
+	border-radius:6px;
+	font-weight:bolder;
+}
+#his{
+	text-align:center;
+	background-color:#9E374C;
+	border-radius:6px;
+	color:white;
+font-weight:bolder;
+}
+#his:hover{
+		text-align:center;
+	background-color:white;
+	color:#9E374C;
+	border-radius:6px;
+	font-weight:bolder;
+}
+#pam{
+	text-align:center;
+	background-color:#959db4;
+	border-radius:6px;
+	color:white;
+font-weight:bolder;
+}
+#pam:hover{
+		text-align:center;
+	background-color:white;
+	color:#959db4;
+	border-radius:6px;
+	font-weight:bolder;
+}
+#kontakt{
+	text-align:center;
+	background-color:#5a5b56;
+	border-radius:6px;
+	color:white;
+  font-weight:bolder;
+}
+#kontakt:hover{
+		text-align:center;
+	background-color:white;
+	color:#5a5b56;
+	border-radius:6px;
+	font-weight:bolder;
+}
+main{
+	
+	background-color:#EFEBDF;
+	width:100%;
+	height:1200px;
+}
+#anime{
+	float:left;
+	width:90%;
+	height:400px;
+	 margin-bottom:50px;
+	  margin-left:200px;
+}
+#miasta{
+	  width:600px;
+	  height:750px;
+	  margin-bottom:50px;
+	  margin-left:200px;
+}
+#text{
+	  width:600px;
+	  height:200px;
+	  margin-left:200px;
+	  text-align:center;
+}
+#sztuki{
+	width:50px;
+	text-align:center;
+}
+#t1{
+	
+  float:left;	
+  margin-top:300px;
+  text-align:center;
+  margin-left:120px;
+}
+#t2{
+	 float:left;	
+  margin-top:300px;
+  text-align:center;
+  margin-left:60px;
+	
+}
+#t3{
+	 float:left;	
+  margin-top:300px;
+  text-align:center;
+  margin-left:60px;
+	
+}
+footer{
+	background-color:#8B8B7F;
+	width:100%;
+	height:80px;
+	clear:both;
+	text-align:center;
+	line-height:80px;
+	
+	color:white;
+}

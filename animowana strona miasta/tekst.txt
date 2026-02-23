@@ -1,0 +1,29 @@
+
+--------------------------------index.html
+
+MIASTA POLSKI
+poznaj piękno polskiej ziemi
+DATA: DD/MM/RRRR
+strona główna  histora i tradycje pamiątki kontakt
+ 
+Nasz kraj
+Lorem ipsum dolor sit ament, conjestrea adghyhhhhauula elt. Suprostazja niuhaj pude sterot at, ahg gggdufa, nullaz.
+
+Histroia i tradycje
+Lorem ipsum dolor sit ament, conjestrea adghyhhhhauula elt. Suprostazja niuhaj pude sterot at, ahg gggdufa, nullaz.
+
+Kontakt
+Lorem ipsum dolor sit ament, conjestrea adghyhhhhauula elt. Suprostazja niuhaj pude sterot at, ahg gggdufa, nullaz.
+
+Copyright  ZSE RRRR, Imię i Nazwisko, klasa:xx
+
+
+
+
+--------------------------------pamiatki.html
+
+Tutaj zakupisz kartki pamiątkowe najwyższej jakośći!
+Wybierz ilość i rodzaj:
+Ilość:  szt 
+Rodzaj: KARTA A KARTA B KARTA C 
+Koszt: 0 zł RESET

@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>ZSE | MIASTA POLSKI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="OBRAZY/favicon.png">
+</head>
+
+			<body onload="czas()">
+			     <header>
+				 <div id="logo">
+				 <img src="OBRAZY/logo.png" alt="logo">
+				  </div>
+				  <div id="titles">
+					<h1>Miasta Polski</h1>
+					<h3>poznaj piękno polskiej ziemi</h3>
+					</div>
+					<div id="prawy">
+					    <script src="data.js">
+						</script>
+						<span id="data"></span>
+					</div>
+				 </header>
+				 
+				 <main>
+				    <nav>
+					   <ul>
+					   <li id="glowna"><a href="index.html">strona główna</a></li>
+					    <li id="his">historia i inspiracje</li>
+						 <li id="pam"><a href="pamiątki.html">pamiątki</a></li>
+						 <li id="kontakt">kontakt</li>
+					   </ul>
+					</nav>
+					<div id="text">
+					   
+					  <form>
+							    
+						<h3>Tutaj zakupisz kartki pamiątkowe najwyższej jakośći!</h3>
+						<p>Wybierz ilość i rodzaj:</p>
+						<p>Ilość:<input type="number" value="0" id="sztuki"> szt. <input type="radio" name="a" id="honor">Honorowy dawca krwi</p>
+						<p>Rodzaj:<input type="button" value="KARTA A" onclick="cardA()"><input type="button" value="KARTA B" onclick="cardB()"><input type="button" value="KARTA C" onclick="cardC()"></p>
+						<p>Koszt: <span id="result">0 zł</span> <input type="reset" value="RESET" onclick="resecik()"></p>
+							 
+				     </form>
+					</div>
+					<script src="kalkulacja.js">
+					</script>
+					
+						<div id="t1">
+					   <h3>Nasz kraj</h3>
+							<p>Lorem ipsum dolor sit ament, conjestrea</p> <p>adghyhhhhauula elt. Suprostazja niuhaj</p><p>pude sterot at, ahg gggdufa, nullaz.</p>
+					</div>
+					<div id="t2">
+					   <h3>Histroia i tradycje</h3>
+							<p>Lorem ipsum dolor sit ament, conjestrea</p> <p>adghyhhhhauula elt. Suprostazja niuhaj</p><p>pude sterot at, ahg gggdufa, nullaz.</p>
+					</div>
+					<div id="t3">
+					   <h3>Kontakt</h3>
+							<p>Lorem ipsum dolor sit ament, conjestrea</p> <p>adghyhhhhauula elt. Suprostazja niuhaj</p><p>pude sterot at, ahg gggdufa, nullaz.</p>
+					</div>
+				 </main>
+			
+				<footer>
+				      <p>Copyright&copy;ZSE 2019 Bartosz Wypych Klasa:&nbsp;4f</p>
+				</footer>
+			</body>
+</html>
